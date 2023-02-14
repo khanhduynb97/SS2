@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="5">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Demo"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center|left"
+        android:background="#0923B6"
+        android:paddingLeft="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ivPokemon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pokemon"
+                android:layout_alignParentTop="true"/>
+            <TextView
+                android:id="@+id/tvByrdie"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Byrdie"
+                android:textSize="20sp"
+                android:gravity="center|left"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/ivPokemon"/>
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="10 phut truoc"
+                android:textSize="20sp"
+                android:gravity="center|left"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/ivPokemon"
+                android:layout_below="@+id/tvByrdie"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/ivPokemon"
+                android:layout_marginLeft="10dp"
+                android:text="Pokemon Go thu về 2 tỷ đô"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ivPokemonGo"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:src="@drawable/pokemongo"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp" />
+            <TextView
+                android:id="@+id/tvDoanhthu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doanh thu pokemon go"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerInParent="true"
+                android:textSize="20sp"
+                android:layout_below="@+id/ivPokemonGo" />
+            <TextView
+                android:id="@+id/tvWeb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="dantri.com.vn"
+                android:textSize="15sp"
+                android:layout_below="@+id/tvDoanhthu"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="3"
+                android:layout_below="@+id/tvWeb">
+                <Button
+                    android:id="@+id/btnLike"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="LIKE"
+                    android:layout_marginBottom="1dp" />
+                <Button
+                    android:id="@+id/btnComment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="COMMENT"
+                    android:layout_marginBottom="1dp" />
+                <Button
+                    android:id="@+id/btnShare"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:text="SHARE"
+                    android:layout_marginBottom="1dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
